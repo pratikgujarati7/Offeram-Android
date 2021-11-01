@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@color/smokyWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_rounded_corners_shadow"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="125dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageIv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2.5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_bird" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal">
+
+                <!--<TextView-->
+                <!--android:id="@+id/numOffersTv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="left|center"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:background="@drawable/bg_rounded_corners_overlay"-->
+                <!--android:paddingBottom="3dp"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:paddingRight="5dp"-->
+                <!--android:paddingTop="3dp"-->
+                <!--android:text="7 Offers"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="9sp" />-->
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1" />
+
+                <TextView
+                    android:id="@+id/distanceTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center|end"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_rounded_corners_overlay"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="3dp"
+                    android:text="99.99 km"
+                    android:textColor="@color/white"
+                    android:textSize="8sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/featureTv"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="top"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="left"-->
+                    <!--android:text="Featured"-->
+                    <!--android:textColor="@color/textColorLightGrey"-->
+                    <!--android:textSize="12dp" />-->
+
+                    <TextView
+                        android:id="@+id/titleTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:maxLines="1"
+                        android:text="Pizza Zone"
+                        android:textColor="@color/textColorGrey"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reviewTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_purple"
+                    android:gravity="right"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="3dp"
+                    android:text="100"
+                    android:textColor="@color/lightGrey"
+                    android:textSize="9dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/outletTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Dumas Road"
+                android:textColor="@color/lightGrey"
+                android:textSize="9dp" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/cuisinesTv"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="7dp"-->
+            <!--android:gravity="left"-->
+            <!--android:text="Punjabi, Chinese, Continental"-->
+            <!--android:textColor="@color/textColorGrey"-->
+            <!--android:textSize="13dp" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/offerTv"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="left"-->
+            <!--android:text="Buy One Get One Free Ticket"-->
+            <!--android:textColor="@color/darkGreyColor"-->
+            <!--android:textSize="10dp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/redeemTv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:gravity="right"-->
+            <!--android:text="105 redeemed"-->
+            <!--android:textColor="@color/darkGreyColor"-->
+            <!--android:textSize="10dp" />-->
+
+            <!--</LinearLayout>-->
+
+            <TextView
+                android:id="@+id/offerTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="2"
+                android:text="Buy One Get One Free Ticket"
+                android:textColor="@color/darkGreyColor"
+                android:textSize="11dp" />
+
+            <TextView
+                android:id="@+id/redeemTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="105 redeemed"
+                android:textColor="@color/darkGreyColor"
+                android:textSize="9dp" />
+
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/title"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="left"-->
+        <!--android:paddingBottom="10dp"-->
+        <!--android:paddingTop="10dp"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="15dp" />-->
+
+    </LinearLayout>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0.5dp"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:background="@color/white" />-->
+
+</LinearLayout>

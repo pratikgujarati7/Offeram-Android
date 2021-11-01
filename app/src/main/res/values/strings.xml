@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Offeram</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="facebook_app_id">543505922652128</string>
+    <string name="fb_login_protocol_scheme">fb543505922652128</string>
+    <string name="terms_conditions"><u>Terms &amp; Conditions</u></string>
+    <string name="learnmore"><u>Learn more About Offeram coins</u></string>
+    <string name="reedemer"><u>See who is Top Redeemer amongst you</u></string>
+    <string name="startpinging"><i>Start PINGing Now!!!</i></string>
+    <string name="terms_n_conditions">Terms &amp; Conditions</string>
+    <string name="rupee">\u20B9</string>
+    <string name="pingnow">Oops! You have not been pinged by anyone yet.
+        Start sharing offers by <b> Ping An Offer now!</b></string>
+    <string name="havepromo">Wow!!! You are just one step away from Dil Kholke Discounts.
+
+        Get <b>all the amazing offers</b> listed in the app for <b>all the cities</b> at just Rs. 600 with 1 year validity.
+
+        <b>Apply Promocode</b></string>
+
+
+    <string name="invitefriend">Spread Dil Kholke DISCOUNTS in your circle and get rewarded with <b>100 Coins</b> for successful signup using your referral code &amp; <b>1000 Coins</b> on successful purchase of Offeram Mobile App subscription for 1 year</string>
+
+
+
+
+    <!--<string-array name="nav_drawer_customer">-->
+
+
+    <string-array name="nav_drawer_labels">
+        <item>Home</item>
+        <item>Used Offers</item>
+        <item>Change Version</item>
+        <item>Call Support</item>
+        <item>Terms &amp; Conditions</item>
+        <item>About Us</item>
+        <item>Rate this app</item>
+        <item>Share this app</item>
+    </string-array>
+
+    <string-array name="starred_tab_array">
+        <item>Favorites</item>
+        <item>Used Offers</item>
+        <item>Pinged Offers</item>
+        <item>Received offers</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_imagepicker">Upload Photos</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

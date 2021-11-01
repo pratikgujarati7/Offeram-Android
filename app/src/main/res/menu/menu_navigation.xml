@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_offers"
+        android:icon="@drawable/offers_inactive"
+        android:title="Offers" />
+
+    <item
+        android:id="@+id/bottom_favorites"
+        android:icon="@drawable/favourites_inactive"
+        android:title="Activities" />
+
+    <item
+        android:id="@+id/bottom_notifications"
+        android:icon="@drawable/notifications_inactive"
+        android:title="Notification" />
+
+    <item
+        android:id="@+id/bottom_my_account"
+        android:icon="@drawable/myaccount_inactive"
+        android:title="My Account" />
+</menu>

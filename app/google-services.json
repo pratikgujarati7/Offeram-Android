@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "247945412234",
+    "firebase_url": "https://offeram-ea6e8.firebaseio.com",
+    "project_id": "offeram-ea6e8",
+    "storage_bucket": "offeram-ea6e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247945412234:android:19dbab0ee70e6bbd",
+        "android_client_info": {
+          "package_name": "com.accreteit.offeram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247945412234-d33kjsjthgqvgn4i7mcu05s87taap9s2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMMaT3L3QUZTHb9eeFdDoE1coDan39H6I"
+        },
+        {
+          "current_key": "AIzaSyDDpqkoaQjb4o4zjqDx2GjkmTKZedPGEeY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247945412234:android:3b03b532be3c0edf",
+        "android_client_info": {
+          "package_name": "com.offeram.couponbouquet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247945412234-d33kjsjthgqvgn4i7mcu05s87taap9s2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMMaT3L3QUZTHb9eeFdDoE1coDan39H6I"
+        },
+        {
+          "current_key": "AIzaSyDDpqkoaQjb4o4zjqDx2GjkmTKZedPGEeY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

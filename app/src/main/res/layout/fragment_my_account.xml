@@ -1,0 +1,387 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/smokyWhite"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="56dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:background="@color/darkPurple">-->
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_margin="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:src="@drawable/fail"/>&ndash;&gt;-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="0.1"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center"-->
+    <!--android:text="My Account"-->
+    <!--android:textSize="20sp"-->
+    <!--android:textColor="@color/white"/>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/settingsIv"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:src="@drawable/fail"/>-->
+
+    <!--</LinearLayout>-->
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_text_center" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:descendantFocusability="blocksDescendants">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/headerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@drawable/ic_my_account_bg"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileIv"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_launcher"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="1.5dp" />
+
+                    <ImageView
+                        android:id="@+id/editIv"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignEnd="@+id/profileIv"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignRight="@+id/profileIv"
+                        android:background="@drawable/bg_edit_icon"
+                        android:src="@drawable/ic_edit_profile" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/nameTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/contactTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/validDateTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sagment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="210dp"
+                android:background="@drawable/bg_rounded_corners_shadow"
+                android:weightSum="10">
+                <RelativeLayout
+                    android:id="@+id/rel_coin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="5"
+                    android:background="@color/white">
+                    <ImageView
+                        android:id="@+id/img_coin"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/offeram_coins"/>
+                    <View
+                        android:id="@+id/view_coin"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentBottom="true"/>
+                    
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rel_family"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="5"
+                    android:background="@color/white">
+                    <ImageView
+                        android:id="@+id/img_family"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/friends_and_family" />
+                    <View
+                        android:id="@+id/view_family"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_alignParentBottom="true"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_second_sagment"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/ll_sagment"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bg_rounded_corners_shadow">
+                <RelativeLayout
+                    android:id="@+id/rel_offeramcoin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/txt_offeramcoinheading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Offeram Coins"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/offeram_coins"
+                        android:padding="5dp"
+                        android:layout_below="@+id/txt_offeramcoinheading"
+                        android:layout_toLeftOf="@+id/txt_offeramcoin"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_offeramcoin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/txt_offeramcoinheading"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"/>
+                    <ImageView
+                        android:id="@+id/img_wallet"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/wallet"
+                        android:layout_below="@+id/txt_offeramcoinheading"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:id="@+id/txt_learnmore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/learnmore"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/txt_offeramcoin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_offeramfriend"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_offeramfriendheading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Friends &amp; Family"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_top_reedmer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reedemer"
+                        android:textSize="12dp"
+                        android:layout_below="@+id/txt_offeramfriendheading"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/black"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/txt_top_reedmer"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:id="@+id/txt_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1."
+                            android:layout_centerVertical="true"
+                            />
+                        <ImageView
+                            android:id="@+id/img_profile"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/offeram_coins"
+                            android:layout_toRightOf="@+id/txt_number"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txt_top_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ankit"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/img_profile"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/black"/>
+                        <ImageView
+                            android:id="@+id/img_coin_name"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/offeram_coins"
+                            android:layout_toLeftOf="@+id/txt_top_price"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5dp"
+                            />
+                        <TextView
+                            android:id="@+id/txt_top_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ankit"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/black"/>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/ll_second_sagment"
+                android:background="@drawable/bg_rounded_corners_shadow"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:text="Offeram's Corner"
+                    android:textColor="@color/darkGreyColor"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="2dp"
+                    android:background="@color/smokyWhite" />
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="10dp">-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

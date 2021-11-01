@@ -1,1 +1,0 @@
-# Offeram-Android

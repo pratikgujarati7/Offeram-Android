@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/offerLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/offerIv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/offers_active" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="Offers"
+            android:textColor="@color/darkPurple"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/favouriteLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/favouriteIv"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/activities_inactive" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Activities"
+            android:textColor="@color/darkPurple"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notificationLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/unreadIv"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/notificationIv"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/notifications_inactive" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Notification"
+            android:textColor="@color/darkPurple"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/myAccountLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:paddingTop="3dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/myAccountIv"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/myaccount_inactive" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="My Account"
+            android:textColor="@color/darkPurple"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
